@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<head>
+	<meta charset="UTF-8">
+	<title>John Doe's Homepage</title>
+	<script type="text/javascript" src="https://unpkg.com/simple-tracker@latest/dist/simple-tracker.min.js"></script>
+	<script>
+		// initialize tracker endpoint and settings
+		tracker.push({
+			endpoint: '/endpoint', // Endpoint to send tracking data to
+			attachClientContext: true, // Attach various client context, such as useragent, platform, and page url
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html"><code>Home</code></a></li>
+				<li><a href="about.html"><code>About</code></a></li>
+				<li><a href="portfolio.html"><code>Portfolio</code></a></li>
+				<li><a href=""><code>Contact</code></a></li>
+			</ul>
+		</nav>
+		<h1><b>Welcome to John Doe's Homepage</b></h1>
+	</header>
+
+	<main>
+		<section>
+			<div>
+				<h2 id="about"><i>About John Doe</i></h2>
+				<p>
+					John Doe is an <span style="font-weight: bold;">Information Systems Master's student</span> studying at the Technical University of Munich.
+					He is currently
+					pursuing his studies abroad at the University of California, San Diego.
+				</p>
+				<p>
+					John is passionate about technology and looks forward to starting his career after completing his
+					9-month study
+					abroad program.
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<h2 id="portfolio"><i>Portfolio</i></h2>
+				<div class="github-card" data-github="ju-ra-96" data-width="400" data-height="317" data-theme="medium"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+				<figure>
+					<img src="project1.jpg" alt="Project 1">
+					<figcaption>Project 1 - Description of the project</figcaption>
+				</figure>
+				<figure>
+					<img src="project2.jpg" alt="Project 2">
+					<figcaption>Project 2 - Description of the project</figcaption>
+				</figure>
+			</div>
+		</section>
+	</main>
+
+	<aside>
+		<h3><strong>Contact Information</strong></h3>
+		<p>Email: john.doe@email.com</p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe/" target="_blank" rel="noopener noreferrer">John Doe's
+				LinkedIn Profile</a></p>
+	</aside>
+
+
+
+	<!-- Additional Tags -->
+	<canvas width="200" height="100" style="border:1px solid #000;"></canvas>
+	<svg width="100" height="100">
+		<circle cx="50" cy="50" r="40" fill="blue" />
+	</svg>
+
+	<!-- Video Tag -->
+	<video width="320" height="240" controls>
+		<source src="video.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
+	<!-- col and source tags -->
+	<table>
+		<colgroup>
+			<col style="background-color: yellow;">
+			<col style="background-color: pink;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Column 1</th>
+				<th>Column 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Row 1</td>
+				<td>Row 1 Data</td>
+			</tr>
+			<tr>
+				<td>Row 2</td>
+				<td>Row 2 Data</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<picture>
+		<source srcset="image.webp" type="image/webp">
+		<img src="image.jpg" alt="Responsive Image">
+	</picture>
+
+	<!-- Form Tags -->
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<fieldset>
+			<legend>Choose your preferred language:</legend>
+			<input type="radio" id="english" name="language" value="english" checked>
+			<label for="english">English</label><br>
+			<input type="radio" id="german" name="language" value="german">
+			<label for="german">German</label><br>
+		</fieldset>
+		<label for="comments">Comments:</label>
+		<textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+		<label for="favoriteColor">Favorite color:</label>
+		<input type="color" id="favoriteColor" name="favoriteColor">
+		<input type="submit" value="Submit">
+	</form>
+
+	<!-- List Tags -->
+	<ul>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+	</ul>
+
+	<ol>
+		<li>Ordered item 1</li>
+		<li>Ordered item 2</li>
+		<li>Ordered item 3</li>
+	</ol>
+
+	<!-- Multimedia Tags -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen></iframe>
+
+	<audio controls>
+		<source src="audio.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<source src="video.webm" type="video/webm">
+	<source src="video.mp4" type="video/mp4">
+	<p>Your browser does not support the video tag.</p>
+
+	<!-- Miscellaneous Tags -->
+	<details>
+		<summary>Click for more information</summary>
+		<p>Additional details or content can be shown or hidden here.</p>
+	</details>
+
+	<button>Click Me</button>
+
+	<template>
+		<p>This content will be cloned and used elsewhere in the document.</p>
+	</template>
+
+	<figure>
+		<img src="figure1.jpg" alt="Figure Image 1">
+		<figcaption>Figure Caption 1</figcaption>
+	</figure>
+
+	<figure>
+		<img src="figure2.jpg" alt="Figure Image 2">
+		<figcaption>Figure Caption 2</figcaption>
+	</figure>
+
+	<style>
+		nav{
+			display: flex;
+			/* 1 */
+			justify-content: space-between;
+			/* 2 */
+			padding: 1rem 2rem;
+			/* 3 */
+			background: #90EE90;
+			/* 4 */
+		}
+
+		nav ul {
+			display: flex;
+			/* 5 */
+			list-style: none;
+			/* 6 */
+		}
+
+		nav li {
+			padding-left: 1rem;
+			/* 7! */
+		}
+	</style>
+	<footer>
+		<div>
+			<p>&copy; 2023 John Doe. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
