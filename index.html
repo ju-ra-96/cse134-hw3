@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css">
 	<script src="https://cdn.jsdelivr.net/npm/github-repo-cards@1.0.9/app.js" defer></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-repo-cards@1.0.9/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -28,30 +29,24 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home"><code>Home</code></a>
-          </li>
-          <li>
-            <a href="#about"><code>About</code></a>
-          </li>
-          <li>
-            <a href="#portfolio"><code>Portfolio</code></a>
-          </li>
-          <li>
-            <a href="#contact-info"><code>Contact</code></a>
-          </li>
-        </ul>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-logo">Logo</div>
+          <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact-info">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-      <h1><b>Welcome to Julian Rahimi's Homepage</b></h1>
     </header>
 
     <main>
       <section>
-        <div>
-          <h2 id="home"><i>Introduction: Julian Rahimi</i></h2>
-
+        <div class="typewriter">
+          <h1>Welcome to Julian Rahimi's Homepage</h1>
+        </div>
           <hr />
           <picture
             ><img
@@ -62,6 +57,7 @@
               style="float: left; margin-right: 12px"
             />
           </picture>
+          <h2 id="home"><i>Introduction: Julian Rahimi</i></h2>
           <pre>
 					<em>
 					Julian Rahimi is an <span style="font-weight: bold;">Information Systems Master's student</span> studying at the Technical University of Munich. 
@@ -73,12 +69,47 @@
 				              9-month study abroad program.
 					        </em>
 						</pre>
-        </div>
       </section>
       <hr />
-          <h2 id="portfolio"><i>Portfolio</i></h2>
-		  <section class="github-repo-cards" data-user="ju-ra-96"><h4>Github Overview</h4></section>
-          <figure>
+      <h2>Info</h2>
+      <div class="container">
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">20th may, 2010</h3>
+                <h1>Heading 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+		  <section><h4>Github Overview</h4></section>
+      <hr />
+      <h2 id="portfolio"><i>Portfolio</i></h2>    
+      <figure>
             <img
               src="creative-commons-nd.svg"
               alt="Project 1"
@@ -274,13 +305,9 @@
       <img src="figure2.jpg" alt="Figure Image 2" />
       <figcaption>Figure Caption 2</figcaption>
     </figure>
-    <footer
-      style="background-color: #90ee90; padding: 1rem 2rem; display: flex"
-    >
-      <div>
-        <p>
-          <code> &copy; 2023 Julian Rahimi. All rights reserved. </code>
-        </p>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2023 Julian Rahimi. All rights reserved.</p>
       </div>
     </footer>
   </body>
