@@ -365,7 +365,7 @@ body {
   flex-direction: column;
   /* Make the body a column flex container */
   min-height: 100vh;
-  
+
 }
 
 /* Padding for main content area to avoid overlap */
@@ -388,9 +388,10 @@ main {
 header {
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
-   background-color: inherit;
+  background-color: inherit;
   color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -978,7 +979,10 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 200% auto;
 }
+
+
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
@@ -987,10 +991,10 @@ html {
   }
 }
 
-i{
+i {
   color: white;
 }
 
-pre{
+pre {
   color: white;
 }
