@@ -6,42 +6,171 @@
     justify-content: center;
   }
   */
-  /* DEMO-SPECIFIC STYLES */
-  .typewriter h1{
-    color: black;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: black;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* Label for the contact method selection */
+label[for="contact"] {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Contact method selection dropdown */
+#contact {
+  padding: 8px;
+  border: 2px solid #f9ca24;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #111;
+  color: white;
+}
+
+/* Submit button */
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f9ca24;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e4b416;
+}
+
+/* Name input field */
+label[for="name"] {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input#name {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Preferred language radio buttons */
+fieldset {
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Message textarea */
+label[for="comments"] {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea#comments {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Favorite color input */
+label[for="favoriteColor"] {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input#favoriteColor {
+  width: 100%;
+  padding: 8px;
+}
+
+/* Email link */
+a[href^="mailto:"] {
+  color: #f9ca24;
+  text-decoration: none;
+}
+
+a[href^="mailto:"]:hover {
+  text-decoration: underline;
+}
+
+/* LinkedIn link */
+a[href^="https://de.linkedin.com/in/"] {
+  color: #f9ca24;
+  text-decoration: none;
+}
+
+a[href^="https://de.linkedin.com/in/"]:hover {
+  text-decoration: underline;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
   }
 
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
   }
 
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+  50% {
+    border-color: orange
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Montserrat";
 }
+
 .container {
   min-height: 100vh;
   width: 100%;
@@ -50,7 +179,10 @@ html {
   justify-content: center;
   padding: 100px 0;
   background-color: #111;
+  flex-direction: column;
+  flex: 1;
 }
+
 .timeline {
   width: 80%;
   height: auto;
@@ -62,6 +194,7 @@ html {
 .timeline ul {
   list-style: none;
 }
+
 .timeline ul li {
   padding: 20px;
   background-color: #1e1f22;
@@ -69,26 +202,31 @@ html {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
+
 .timeline-content h1 {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
 }
+
 .timeline-content p {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
 }
+
 .timeline-content .date {
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
+
 @media only screen and (min-width: 768px) {
   .timeline:before {
     content: "";
@@ -100,23 +238,27 @@ html {
     height: 100%;
     background-color: gray;
   }
+
   .timeline ul li {
     width: 50%;
     position: relative;
     margin-bottom: 50px;
   }
+
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
     transform: translateX(-30px);
     border-radius: 20px 0px 20px 20px;
   }
+
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
     transform: translateX(30px);
     border-radius: 0px 20px 20px 20px;
   }
+
   .timeline ul li::before {
     content: "";
     position: absolute;
@@ -126,18 +268,22 @@ html {
     background-color: gray;
     top: 0px;
   }
+
   .timeline ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
     right: -30px;
   }
+
   .timeline ul li:nth-child(even)::before {
     transform: translate(-50%, -50%);
     left: -30px;
   }
+
   .timeline-content .date {
     position: absolute;
     top: -30px;
   }
+
   .timeline ul li:hover::before {
     background-color: aqua;
   }
@@ -148,10 +294,13 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
-  backdrop-filter: blur(10px); /* Add blur effect for transparency (adjust as needed) */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Transparent black background */
+  backdrop-filter: blur(10px);
+  /* Add blur effect for transparency (adjust as needed) */
   padding: 10px 0;
-  z-index: 9999; /* Ensure the navbar appears above other content */
+  z-index: 9999;
+  /* Ensure the navbar appears above other content */
 }
 
 .navbar-container {
@@ -184,21 +333,25 @@ html {
 }
 
 .navbar-menu li a:hover {
-  color: #f9ca24; /* Change color on hover */
+  color: #f9ca24;
+  /* Change color on hover */
 }
 
 /* Footer styles */
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
-  backdrop-filter: blur(10px); /* Add blur effect for transparency (adjust as needed) */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Transparent black background */
+  backdrop-filter: blur(10px);
+  /* Add blur effect for transparency (adjust as needed) */
   text-align: center;
   color: white;
-  z-index: 9999; /* Ensure the footer appears above other content */
+  z-index: 9999;
+  /* Ensure the footer appears above other content */
 }
 
 .footer-container {
@@ -206,8 +359,398 @@ html {
   margin: 0 auto;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* Make the body a column flex container */
+  min-height: 100vh;
+}
+
 /* Padding for main content area to avoid overlap */
 main {
-  padding-top: 80px; /* Adjust this value to provide space for the fixed navbar */
-  padding-bottom: 60px; /* Adjust this value to provide space for the fixed footer */
+  padding-top: 80px;
+  /* Adjust this value to provide space for the fixed navbar */
+  padding-bottom: 60px;
+  /* Adjust this value to provide space for the fixed footer */
+  flex: 1;
 }
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.navbar-menu li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #f9ca24;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.navbar-menu li a:hover::after {
+  transform: scaleX(1);
+}
+
+.footer {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: white;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+/* ... Existing CSS styles ... */
+
+/* Education Table Styles */
+
+table.education-table {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: #f1f4fb;
+  color: #2c3e50;
+}
+
+table.education-table th,
+table.education-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table.education-table th {
+  background-color: #1c3faa;
+  font-weight: bold;
+  color: #fff;
+}
+
+table.education-table tr:hover {
+  background-color: #e3e8f4;
+  cursor: pointer;
+}
+
+table.education-table td:last-child {
+  text-align: center;
+}
+
+/* ... Existing CSS styles ... */
+
+/* Work Experience List Styles */
+
+ul.work-experience-list {
+  list-style: none;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+ul.work-experience-list li {
+  padding: 20px;
+  background-color: #111;
+  color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+ul.work-experience-list h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+ul.work-experience-list p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+ul.work-experience-list ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+ul.work-experience-list li ul li {
+  list-style-type: disc;
+}
+
+ul.work-experience-list li:hover {
+  background-color: #1c3faa;
+  cursor: pointer;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+  background-color: #f1f4fb;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project img {
+  margin-right: 12px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #1c3faa;
+}
+
+.project-info p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+.project-info button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1c3faa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.project-info button:hover {
+  background-color: #0d255d;
+}
+
+.project-info button:last-child {
+  background-color: blue;
+}
+
+.project-info button:last-child:hover {
+  background-color: #1c3faa;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f4fb;
+  color: #333;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER STYLES */
+.navbar {
+  background-color: #1c3faa;
+  padding: 10px 0;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.navbar-menu li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #f9ca24;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.navbar-menu li a:hover::after {
+  transform: scaleX(1);
+}
+
+/* FOOTER STYLES */
+.footer {
+  padding: 10px 0;
+  background-color: #1c3faa;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* MAIN CONTENT STYLES */
+main {
+  padding-top: 60px; /* Adjust this value to provide space for the fixed navbar */
+  padding-bottom: 60px; /* Adjust this value to provide space for the fixed footer */
+  flex: 1;
+}
+
+/* Add styling for the rest of the page elements as needed */
+/* ... */
+
+/* Timeline Styles */
+.timeline ul li {
+  background-color: white;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.timeline ul li h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline ul li p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  margin-right: 12px;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1c3faa;
+}
+
+.project-info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.project-info button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1c3faa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.project-info button:hover {
+  background-color: #0d255d;
+}
+
+.project-info button:last-child {
+  background-color: blue;
+}
+
+.project-info button:last-child:hover {
+  background-color: #1c3faa;
+}
+
+
