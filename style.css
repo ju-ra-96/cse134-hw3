@@ -669,8 +669,10 @@ body {
 
 /* MAIN CONTENT STYLES */
 main {
-  padding-top: 60px; /* Adjust this value to provide space for the fixed navbar */
-  padding-bottom: 60px; /* Adjust this value to provide space for the fixed footer */
+  padding-top: 60px;
+  /* Adjust this value to provide space for the fixed navbar */
+  padding-bottom: 60px;
+  /* Adjust this value to provide space for the fixed footer */
   flex: 1;
 }
 
@@ -678,7 +680,7 @@ main {
 /* ... */
 
 /* Timeline Styles */
-/* .timeline ul li {
+.timeline ul li {
   background-color: white;
   color: #333;
   border-radius: 10px;
@@ -696,7 +698,7 @@ main {
 .timeline ul li p {
   font-size: 16px;
   margin-bottom: 10px;
-} */
+}
 
 /* Portfolio Section Styles */
 #portfolio {
@@ -753,24 +755,24 @@ main {
   background-color: #1c3faa;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', 'sans-serif';
   box-sizing: border-box;
 }
 
-body{
-  background: #2e364a;
+body {
+  background: #f0f0f0; /* Light background color */
 }
 
-.timeline{
+.timeline {
   position: relative;
   max-width: 1200px;
   margin: 100px auto;
 }
 
-.container{
+.container {
   padding: 10px 50px;
   position: relative;
   width: 50%;
@@ -778,58 +780,59 @@ body{
   opacity: 0;
 }
 
-@keyframes movedown{
-  0%{
+@keyframes movedown {
+  0% {
     opacity: 1;
     transform: translateY(-30px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 
-.container:nth-child(1){
+.container:nth-child(1) {
   animation-delay: 0s;
 }
 
-.container:nth-child(2){
+.container:nth-child(2) {
   animation-delay: 1s;
 }
 
-.container:nth-child(3){
+.container:nth-child(3) {
   animation-delay: 2s;
 }
 
-.container:nth-child(4){
+.container:nth-child(4) {
   animation-delay: 3s;
 }
 
-.container:nth-child(5){
+.container:nth-child(5) {
   animation-delay: 4s;
 }
 
-.container:nth-child(6){
+.container:nth-child(6) {
   animation-delay: 5s;
 }
 
-.text-box{
+.text-box {
   padding: 20px 30px;
-  background: #fff;
+  background: #2e364a; /* Dark background color */
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 15px;
+  color: #fff; /* Light font color */
 }
 
-.left-container{
-  left:0;
+.left-container {
+  left: 0;
 }
 
-.right-container{
+.right-container {
   left: 50%;
 }
 
-.container img{
+.container img {
   position: absolute;
   width: 40px;
   border-radius: 50%;
@@ -838,16 +841,16 @@ body{
   z-index: 10;
 }
 
-.right-container img{
+.right-container img {
   left: -20px;
 }
 
-.timeline::after{
-  content:'';
+.timeline::after {
+  content: '';
   position: absolute;
   width: 6px;
   height: 100%;
-  background: #fff;
+  background: #2e364a; /* Dark color for the line */
   top: 0;
   left: 50%;
   margin-left: -3px;
@@ -855,25 +858,25 @@ body{
   animation: moveline 6s linear forwards;
 }
 
-@keyframes moveline{
-  0%{
+@keyframes moveline {
+  0% {
     height: 0;
   }
-  100%{
-    height: 100%
+  100% {
+    height: 100%;
   }
 }
 
-.text-box h2{
+.text-box h2 {
   font-weight: 600;
 }
 
-.text-box small{
+.text-box small {
   display: inline-block;
   margin-bottom: 15px;
 }
 
-.left-container-arrow{
+.left-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -881,11 +884,11 @@ body{
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid #2e364a; /* Dark color for the arrow */
   right: -15px;
 }
 
-.right-container-arrow{
+.right-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -893,38 +896,40 @@ body{
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #fff;
+  border-right: 15px solid #2e364a; /* Dark color for the arrow */
   left: -15px;
 }
 
-@media screen and (max-width: 600px){
-  .timeline{
+@media screen and (max-width: 600px) {
+  .timeline {
     margin: 50px auto;
   }
-  .timeline::after{
+  .timeline::after {
     left: 31px;
   }
-  .container{
+  .container {
     width: 100%;
     padding-left: 80px;
     padding-right: 25px;
   }
-  .text-box{
+  .text-box {
     font-size: 13px;
   }
-  .text-box small{
+  .text-box small {
     margin-bottom: 10px;
   }
-  .right-container{
+  .right-container {
     left: 0;
   }
-  
-  .left-container img, right-container img{
+
+  .left-container img,
+  right-container img {
     left: 10px;
   }
-  
-  .left-container-arrow, .right-container-arrow{
-    border-right: 15px solid #fff;
+
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #2e364a; /* Dark color for the arrow */
     border-left: 0;
     left: -15px;
   }
