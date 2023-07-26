@@ -713,7 +713,7 @@ html {
 
   /* Full height */
   height: 50vh;
-  width:max-content;
+  width:100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -746,10 +746,12 @@ html {
 
 i {
   color: white;
+  width: 100%;
 }
 
 pre {
   color: white;
+  width: 100%;
 }
 
 /* Navbar styles */
@@ -800,4 +802,8 @@ pre {
 
 .navbar-menu li a:hover::after {
   transform: scaleX(1);
+}
+
+aside{
+  width: 100%;
 }
