@@ -984,3 +984,10 @@ footer {
     content: " (" attr(href) ")";
   }
 }
+
+@media screen and (max-width: 767px) {
+  /* Select the first two <p> elements and hide them */
+  p:nth-of-type(-n+2) {
+    display: none;
+  }
+}
