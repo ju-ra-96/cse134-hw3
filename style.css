@@ -8,7 +8,7 @@
   */
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  color: black;
+  color: white;
   font-family: monospace;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -365,6 +365,7 @@ body {
   flex-direction: column;
   /* Make the body a column flex container */
   min-height: 100vh;
+  
 }
 
 /* Padding for main content area to avoid overlap */
@@ -374,13 +375,10 @@ main {
   padding-bottom: 60px;
   /* Adjust this value to provide space for the fixed footer */
   flex: 1;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 1vw;
 }
 
 main {
@@ -390,7 +388,12 @@ main {
 header {
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
-  padding: 10px 0;
+   background-color: inherit;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar {
@@ -402,10 +405,11 @@ header {
 .navbar-menu {
   list-style: none;
   display: flex;
+  gap: 1rem;
 }
 
 .navbar-menu li {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .navbar-menu li a {
@@ -448,14 +452,11 @@ section {
   scroll-snap-align: start;
 }
 
-/* ... Existing CSS styles ... */
-
-/* Education Table Styles */
 
 table.education-table {
   width: 80%;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 2vh;
   border-collapse: collapse;
   background-color: #f1f4fb;
   color: #2c3e50;
@@ -463,9 +464,9 @@ table.education-table {
 
 table.education-table th,
 table.education-table td {
-  padding: 12px;
+  padding: 0.8vw;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border: 0.1vw solid #333;
 }
 
 table.education-table th {
@@ -498,7 +499,7 @@ ul.work-experience-list li {
   background-color: #111;
   color: #f9f9f9;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 ul.work-experience-list h3 {
@@ -594,6 +595,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  line-height: 1.6;
 }
 
 /* HEADER STYLES */
@@ -602,6 +604,9 @@ body {
   padding: 10px 0;
   color: white;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -617,7 +622,7 @@ body {
 }
 
 .navbar-logo {
-  font-size: 24px;
+  font-size: 2.5vw;
   font-weight: bold;
 }
 
@@ -627,7 +632,7 @@ body {
 }
 
 .navbar-menu li {
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 
 .navbar-menu li a {
@@ -679,6 +684,7 @@ main {
 /* Add styling for the rest of the page elements as needed */
 /* ... */
 
+
 /* Timeline Styles */
 .timeline ul li {
   background-color: white;
@@ -700,10 +706,14 @@ main {
   margin-bottom: 10px;
 }
 
+
 /* Portfolio Section Styles */
 #portfolio {
   background-color: #fff;
-  padding: 40px;
+  padding: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 40px auto;
   max-width: 800px;
   border-radius: 10px;
@@ -715,7 +725,9 @@ main {
 }
 
 .project img {
-  margin-right: 12px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1vw;
 }
 
 .project-info h3 {
@@ -949,7 +961,8 @@ body {
   }
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -958,7 +971,7 @@ body, html {
   background-image: url('/freq.png');
 
   /* Full height */
-  height: 100%; 
+  height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -974,3 +987,10 @@ body, html {
   }
 }
 
+i{
+  color: white;
+}
+
+pre{
+  color: white;
+}
