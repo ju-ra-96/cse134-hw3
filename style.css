@@ -1,7 +1,12 @@
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
 .typewriter h1 {
   color: white;
   font-size: 1rem;
-  font-family: monospace;
+  font-family: monospace, 'Montserrat', Arial, sans-serif;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange;
@@ -163,22 +168,7 @@ html {
   font-family: "Montserrat";
 }
 
-/* Footer styles */
-.footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Transparent black background */
-  backdrop-filter: blur(10px);
-  /* Add blur effect for transparency (adjust as needed) */
-  text-align: center;
-  color: white;
-  z-index: 9999;
-  /* Ensure the footer appears above other content */
-}
+
 
 
 
@@ -221,13 +211,7 @@ header {
 
 
 
-.footer {
-  padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  text-align: center;
-  color: white;
-}
+
 
 main {
   scroll-snap-type: y mandatory;
@@ -245,6 +229,7 @@ table.education-table {
   border-collapse: collapse;
   background-color: #f1f4fb;
   color: #2c3e50;
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 table.education-table th,
@@ -274,6 +259,7 @@ table.education-table td:last-child {
 /* Work Experience List Styles */
 
 ul.work-experience-list {
+  font-family: 'Poppins', Arial, sans-serif;
   list-style: none;
   margin: 40px auto;
   max-width: 800px;
@@ -314,6 +300,7 @@ ul.work-experience-list li:hover {
 
 /* Portfolio Section Styles */
 #portfolio {
+  font-family: 'Poppins', Arial, sans-serif;
   background-color: #f1f4fb;
   padding: 40px;
   margin: 40px auto;
@@ -400,6 +387,7 @@ p {
 /* FOOTER STYLES */
 .footer {
   padding: 10px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
   background-color: #1c3faa;
   color: white;
   text-align: center;
@@ -417,6 +405,7 @@ main {
   padding-bottom: 60px;
   /* Adjust this value to provide space for the fixed footer */
   flex: 1;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* Add styling for the rest of the page elements as needed */
@@ -425,6 +414,7 @@ main {
 
 /* Timeline Styles */
 .timeline ul li {
+  font-family: 'Poppins', Arial, sans-serif;
   background-color: white;
   color: #333;
   border-radius: 10px;
@@ -704,10 +694,7 @@ body {
   }
 }
 
-body,
-html {
-  height: 100%;
-}
+
 
 .parallax {
   /* The image used */
@@ -752,6 +739,7 @@ i {
 }
 
 pre {
+  font-family: 'Arial', monospace;
   color: white;
   width: 100%;
 }
@@ -760,6 +748,7 @@ pre {
 .navbar {
   background-color: #1c3faa;
   padding: 10px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
   color: white;
   position: fixed;
   display: flex;
@@ -936,13 +925,6 @@ footer {
 
   /* Additional mobile phone landscape-specific styles */
   /* For example: */
-  p:nth-child(1) {
-    display: none;
-  }
-
-  p:nth-child(2) {
-    display: none;
-  }
 
   /* Additional styles for mobile phone landscape mode */
 }
@@ -958,15 +940,6 @@ footer {
 
   /* Additional mobile phone portrait-specific styles */
   /* For example: */
- 
-
-  p:nth-child(1) {
-    display: none;
-  }
-
-  p:nth-child(2) {
-    display: none;
-  }
 
   /* Additional styles for mobile phone portrait mode */
 }
@@ -990,4 +963,12 @@ footer {
   p:nth-of-type(-n+2) {
     display: none;
   }
+}
+
+form {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+section.about {
+  font-family: 'Montserrat', Arial, sans-serif;
 }
