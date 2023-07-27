@@ -157,7 +157,6 @@ a[href^="https://de.linkedin.com/in/"]:hover {
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
 * {
   margin: 0;
@@ -715,7 +714,7 @@ body {
 
 
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   .parallax {
     background-attachment: scroll;
   }
