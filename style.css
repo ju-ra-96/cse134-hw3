@@ -330,19 +330,8 @@ p {
   text-align: center;
 }
 
-/* FOOTER STYLES */
-.footer {
-  padding: 10px 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background-color: #1c3faa;
-  color: white;
-  text-align: center;
-}
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 /* MAIN CONTENT STYLES */
 main {
@@ -929,4 +918,18 @@ section.about {
 section:not(#map) {
   scroll-snap-align: start;
   align-self: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #1c3faa;
+  color: white;
+  text-align: center;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: calc(-50vw + 50%);
 }
