@@ -17,6 +17,7 @@ html {
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
+  text-align: center;
   /* Adjust as needed */
   animation:
     typing 3.5s steps(30, end),
@@ -217,9 +218,7 @@ main {
   scroll-snap-type: y mandatory;
 }
 
-section {
-  scroll-snap-align: start;
-}
+
 
 
 table.education-table {
@@ -230,6 +229,9 @@ table.education-table {
   background-color: #f1f4fb;
   color: #2c3e50;
   font-family: 'Poppins', Arial, sans-serif;
+  align-self: center;
+  align-items: center;
+  align-content: center;
 }
 
 table.education-table th,
@@ -299,6 +301,85 @@ ul.work-experience-list li:hover {
 }
 
 /* Portfolio Section Styles */
+
+/* GLOBAL STYLES */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f4fb;
+  color: #333;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* FOOTER STYLES */
+.footer {
+  padding: 10px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #1c3faa;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* MAIN CONTENT STYLES */
+main {
+  padding-top: 60px;
+  /* Adjust this value to provide space for the fixed navbar */
+  padding-bottom: 60px;
+  /* Adjust this value to provide space for the fixed footer */
+  flex: 1;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Add styling for the rest of the page elements as needed */
+/* ... */
+
+
+/* Timeline Styles */
+.timeline ul li {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.timeline ul li h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline ul li p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 #portfolio {
   font-family: 'Poppins', Arial, sans-serif;
   background-color: #f1f4fb;
@@ -358,142 +439,7 @@ ul.work-experience-list li:hover {
   background-color: #1c3faa;
 }
 
-/* GLOBAL STYLES */
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f1f4fb;
-  color: #333;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  line-height: 1.6;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-/* FOOTER STYLES */
-.footer {
-  padding: 10px 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background-color: #1c3faa;
-  color: white;
-  text-align: center;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* MAIN CONTENT STYLES */
-main {
-  padding-top: 60px;
-  /* Adjust this value to provide space for the fixed navbar */
-  padding-bottom: 60px;
-  /* Adjust this value to provide space for the fixed footer */
-  flex: 1;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-
-/* Add styling for the rest of the page elements as needed */
-/* ... */
-
-
-/* Timeline Styles */
-.timeline ul li {
-  font-family: 'Poppins', Arial, sans-serif;
-  background-color: white;
-  color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.timeline ul li h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.timeline ul li p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-
-/* Portfolio Section Styles */
-#portfolio {
-  background-color: #fff;
-  padding: 2vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.project {
-  margin-bottom: 20px;
-}
-
-.project img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1vw;
-}
-
-.project-info h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #1c3faa;
-}
-
-.project-info p {
-  font-size: 16px;
-  margin-bottom: 12px;
-  color: #333;
-}
-
-.project-info button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #1c3faa;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: background-color 0.3s;
-}
-
-.project-info button:hover {
-  background-color: #0d255d;
-}
-
-.project-info button:last-child {
-  background-color: blue;
-}
-
-.project-info button:last-child:hover {
-  background-color: #1c3faa;
-}
 
 * {
   margin: 0;
@@ -961,6 +907,11 @@ footer {
 @media screen and (max-width: 767px) {
 
   /* Select the first two <p> elements and hide them */
+  .typewriter h1 {
+    font-size: 0.45rem;
+    /* Adjust font size for small screens */
+  }
+
   p:nth-of-type(-n+2) {
     display: none;
   }
@@ -972,4 +923,10 @@ form {
 
 section.about {
   font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+section:not(#map) {
+  scroll-snap-align: start;
+  align-self: center;
 }
