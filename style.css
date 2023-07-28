@@ -934,3 +934,97 @@ section:not(#map) {
   margin-bottom: calc(-50vw + 50%);
 }
 
+@media screen and (max-width: 600px) {
+
+  /* Adjust font size and other styles for smaller screens */
+  body {
+    font-size: 14px;
+  }
+
+  /* Modify the header and footer styles */
+  header,
+  footer {
+    text-align: center;
+  }
+
+  /* Modify the timeline styles for smaller screens */
+  .timeline {
+    margin: 50px auto;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .text-box {
+    font-size: 13px;
+  }
+
+  .text-box small {
+    margin-bottom: 10px;
+  }
+
+  .right-container {
+    left: 0;
+  }
+
+  .left-container img,
+  .right-container img {
+    left: 10px;
+  }
+
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #2e364a;
+    border-left: 0;
+    left: -15px;
+  }
+
+  /* Adjust the parallax background */
+  .parallax {
+    background-attachment: scroll;
+    height: 30vh;
+  }
+
+  /* Adjust the contact form styles for smaller screens */
+  section#contact-info form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  #contact {
+    max-width: 100%;
+  }
+
+  #contact-choice {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+  }
+
+  input#name {
+    font-size: 14px;
+  }
+
+  fieldset {
+    margin-bottom: 10px;
+  }
+
+  legend {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  textarea#comments {
+    font-size: 14px;
+  }
+}
